@@ -1,0 +1,28 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 2rem;
+}
+
+.quote{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    &::before{
+        content: '"';   
+    }
+    
+    &::after{
+        content: '"'
+    }
+}
+
+@media screen and (min-with: 768px){
+    .home-container{
+        width: 60vw;
+    }
+}
+
